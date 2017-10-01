@@ -51,8 +51,7 @@ it('Consume Head Service', () => {
     .query(body)
     .then((response) => {
     expect(response.status).to.equal(statusCode.OK);
-    console.log('test log Response ', response);
-    expect(response.body).to.equal({});
+    expect(response.body).to.eql({});
     });
 });
 
