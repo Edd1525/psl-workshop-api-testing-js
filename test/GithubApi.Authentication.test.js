@@ -4,6 +4,7 @@ const { expect } = require('chai');
 const urlBase = 'https://api.github.com';
 const githubUserName = 'edd1525';
 const repository = 'psl-workshop-api-testing-js';
+
 describe('Github Api Test', () => {
   describe('Authentication', () => {
     it('Via OAuth2 Tokens by Header', () =>
@@ -23,4 +24,3 @@ describe('Github Api Test', () => {
       }));
   });
 });
-
